@@ -1,0 +1,154 @@
+{
+  "today": 57,
+  "history_days": 56,
+  "eval_days": 28,
+  "scenarios": 5,
+  "products": 44,
+  "policies": {
+    "no_markdown": "Never reduce",
+    "fixed_rule": "Reduce 50% on the use-by day (current store habit)",
+    "copilot": "Markdown Copilot planner (timing and depth of reductions)",
+    "fixed_rule_plus_ordering": "Current habit plus the ordering fixes only",
+    "copilot_plus_ordering": "Planner plus the ordering fixes it suggests from the last 4 weeks"
+  },
+  "waste_weight": 1,
+  "average": {
+    "no_markdown": {
+      "revenue_gbp": 46841.56,
+      "cost_of_stock_gbp": 35565.4,
+      "gross_margin_gbp": 11276.16,
+      "margin_pct": 24.07,
+      "waste_units": 3338.8,
+      "waste_cost_gbp": 4813.72,
+      "units_sold": 15934.2,
+      "full_price_units": 15934.2,
+      "reduced_units": 0,
+      "markdown_given_gbp": 0,
+      "lost_sales_units": 333.8
+    },
+    "fixed_rule": {
+      "revenue_gbp": 49324.88,
+      "cost_of_stock_gbp": 37814.87,
+      "gross_margin_gbp": 11510.01,
+      "margin_pct": 23.33,
+      "waste_units": 1703.8,
+      "waste_cost_gbp": 2348.82,
+      "units_sold": 18999.6,
+      "full_price_units": 14914.2,
+      "reduced_units": 4085.4,
+      "markdown_given_gbp": 4703.02,
+      "lost_sales_units": 351.2
+    },
+    "copilot": {
+      "revenue_gbp": 49166.66,
+      "cost_of_stock_gbp": 37420.27,
+      "gross_margin_gbp": 11746.39,
+      "margin_pct": 23.89,
+      "waste_units": 1902.2,
+      "waste_cost_gbp": 2542.67,
+      "units_sold": 18518,
+      "full_price_units": 14552.2,
+      "reduced_units": 3965.8,
+      "markdown_given_gbp": 3930.86,
+      "lost_sales_units": 347
+    },
+    "fixed_rule_plus_ordering": {
+      "revenue_gbp": 49075.35,
+      "cost_of_stock_gbp": 34410.99,
+      "gross_margin_gbp": 14664.37,
+      "margin_pct": 29.88,
+      "waste_units": 223.8,
+      "waste_cost_gbp": 366.72,
+      "units_sold": 18018.2,
+      "full_price_units": 15621.4,
+      "reduced_units": 2396.8,
+      "markdown_given_gbp": 2997.71,
+      "lost_sales_units": 376.8
+    },
+    "copilot_plus_ordering": {
+      "revenue_gbp": 48673.64,
+      "cost_of_stock_gbp": 33911.07,
+      "gross_margin_gbp": 14762.57,
+      "margin_pct": 30.33,
+      "waste_units": 616.4,
+      "waste_cost_gbp": 855.7,
+      "units_sold": 17305.6,
+      "full_price_units": 15112,
+      "reduced_units": 2193.6,
+      "markdown_given_gbp": 1831.01,
+      "lost_sales_units": 361.4
+    }
+  },
+  "comparison": {
+    "copilot": {
+      "waste_cost_cut_pct": -8.3,
+      "waste_units_cut_pct": -11.6,
+      "extra_margin_gbp_per_4_weeks": 236.38,
+      "extra_margin_gbp_per_year": 3081,
+      "markdown_given_cut_pct": 16.4,
+      "better_margin_in_scenarios": 5,
+      "less_waste_in_scenarios": 0
+    },
+    "fixed_rule_plus_ordering": {
+      "waste_cost_cut_pct": 84.4,
+      "waste_units_cut_pct": 86.9,
+      "extra_margin_gbp_per_4_weeks": 3154.36,
+      "extra_margin_gbp_per_year": 41119,
+      "markdown_given_cut_pct": 36.3,
+      "better_margin_in_scenarios": 5,
+      "less_waste_in_scenarios": 5
+    },
+    "copilot_plus_ordering": {
+      "waste_cost_cut_pct": 63.6,
+      "waste_units_cut_pct": 63.8,
+      "extra_margin_gbp_per_4_weeks": 3252.56,
+      "extra_margin_gbp_per_year": 42399,
+      "markdown_given_cut_pct": 61.1,
+      "better_margin_in_scenarios": 5,
+      "less_waste_in_scenarios": 5
+    },
+    "scenarios": 5
+  },
+  "ordering_check": {
+    "lines_flagged": 9,
+    "of": 44,
+    "flagged": [
+      {
+        "sku": "PB003",
+        "change_pct": -30
+      },
+      {
+        "sku": "PB006",
+        "change_pct": -35
+      },
+      {
+        "sku": "PB007",
+        "change_pct": -35
+      },
+      {
+        "sku": "PB008",
+        "change_pct": -35
+      },
+      {
+        "sku": "PB009",
+        "change_pct": -35
+      },
+      {
+        "sku": "PB010",
+        "change_pct": -24
+      },
+      {
+        "sku": "PB037",
+        "change_pct": -22
+      },
+      {
+        "sku": "PB042",
+        "change_pct": -22
+      },
+      {
+        "sku": "PB044",
+        "change_pct": -15
+      }
+    ]
+  }
+}

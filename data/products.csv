@@ -1,0 +1,45 @@
+sku,name,category,unit_cost,unit_price,shelf_life_days
+PB001,White Bloomer,Bakery,0.99,1.49,3
+PB002,Sourdough Loaf,Bakery,1.13,1.74,3
+PB003,Croissants 4pk,Bakery,1.55,2.49,2
+PB004,Pain au Chocolat 4pk,Bakery,0.77,1.24,3
+PB005,Bagels 5pk,Bakery,0.8,1.24,3
+PB006,Hot Cross Buns 6pk,Bakery,0.47,0.74,2
+PB007,Iced Doughnuts,Bakery,1.59,2.49,2
+PB008,Baguette,Bakery,1.33,1.99,2
+PB009,Cookies 4pk,Bakery,1.48,2.24,2
+PB010,Seeded Rolls 6pk,Bakery,0.5,0.74,2
+PB011,Fresh Cream 300ml,Dairy,1.67,2.24,9
+PB012,Greek Yoghurt 500g,Dairy,1.92,2.74,7
+PB013,Fresh Milk 2L,Dairy,1.52,2.24,8
+PB014,Cottage Cheese,Dairy,1.93,2.74,9
+PB015,Fresh Custard,Dairy,1.99,2.74,7
+PB016,Halloumi,Dairy,2.05,2.74,6
+PB017,Mozzarella Ball,Dairy,2.04,2.74,7
+PB018,Kefir 1L,Dairy,1.49,1.99,8
+PB019,Strawberries 400g,Fruit & Veg,1.3,1.99,4
+PB020,Raspberries 150g,Fruit & Veg,1.49,2.49,5
+PB021,Salad Bag,Fruit & Veg,1.16,1.74,5
+PB022,Avocados 2pk,Fruit & Veg,1.64,2.49,4
+PB023,Baby Spinach,Fruit & Veg,0.95,1.49,5
+PB024,Tenderstem Broccoli,Fruit & Veg,1.41,2.24,5
+PB025,Blueberries 150g,Fruit & Veg,0.68,0.99,5
+PB026,Mushrooms 250g,Fruit & Veg,1.67,2.74,6
+PB027,Cherry Tomatoes,Fruit & Veg,1.68,2.74,5
+PB028,Bananas,Fruit & Veg,1.58,2.49,5
+PB029,Chicken Breast 600g,Meat & Fish,5.49,7.99,6
+PB030,Beef Mince 500g,Meat & Fish,4.84,6.99,5
+PB031,Salmon Fillets 2pk,Meat & Fish,3.5,4.99,6
+PB032,Pork Sausages 8pk,Meat & Fish,4.29,6.24,4
+PB033,Chicken Thighs 1kg,Meat & Fish,2.49,3.49,6
+PB034,Cod Fillets 2pk,Meat & Fish,4.69,6.74,6
+PB035,Diced Lamb 400g,Meat & Fish,2.55,3.74,5
+PB036,Smoked Bacon,Meat & Fish,3.31,4.74,4
+PB037,Lasagne,Ready Meals,3.08,4.99,3
+PB038,Chicken Tikka Masala,Ready Meals,2.33,3.74,3
+PB039,Macaroni Cheese,Ready Meals,3.02,4.74,3
+PB040,Cottage Pie,Ready Meals,2.88,4.49,4
+PB041,Meal Deal Sandwich,Ready Meals,2.01,3.24,3
+PB042,Sushi Box,Ready Meals,2.71,4.24,3
+PB043,Pasta Salad,Ready Meals,2.44,3.99,4
+PB044,Fresh Soup 600g,Ready Meals,2.86,4.49,3

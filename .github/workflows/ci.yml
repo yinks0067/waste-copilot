@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push: { branches: [main] }
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env: { POSTGRES_USER: app, POSTGRES_PASSWORD: app, POSTGRES_DB: waste }
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U app -d waste" --health-interval 2s --health-retries 20
+    env:
+      DATABASE_URL: postgresql://app:app@localhost:5432/waste
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: Simulate the store and score the policies (deterministic)
+        run: npm run simulate
+      - name: Results must match the committed ones
+        run: git diff --exit-code eval/results.json data/
+      - run: npm run db:reset
+      - run: npm run typecheck
+      - run: npm test
+      - name: Score the Claude briefing (only when the API key secret is set)
+        if: ${{ env.ANTHROPIC_API_KEY != '' }}
+        run: npm run eval:briefing -- 3
+      - run: npm run build
+
+  docker:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t waste-copilot .
