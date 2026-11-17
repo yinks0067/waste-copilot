@@ -1,4 +1,4 @@
-# Project B: Waste Copilot
+# Waste Copilot
 
 **Cutting short-life food waste in grocery stores: ordering fixes, a daily reduce list, and a morning briefing written by Claude.**
 
